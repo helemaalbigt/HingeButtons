@@ -1,3 +1,5 @@
+![hingeButton](https://user-images.githubusercontent.com/2615606/113931362-a9b4a480-97f2-11eb-96c4-ba42c087843d.gif)
+
 # Hinge Button Prototype
 Quick prototype for hinged buttons comissioned by Road To VR. 
 
