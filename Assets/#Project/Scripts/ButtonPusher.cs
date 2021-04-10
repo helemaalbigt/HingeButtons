@@ -46,7 +46,7 @@ public class ButtonPusher : MonoBehaviour
         _ray.origin = transform.position;
         _ray.direction = GetCastDirection();
 
-        VrDebugPlugin.VrDebug.DrawLine(_ray.origin, _ray.origin + _ray.direction * CastDepth, active ? IsHovering() ? Color.green : Color.blue : Color.red);
+        //VrDebugPlugin.VrDebug.DrawLine(_ray.origin, _ray.origin + _ray.direction * CastDepth, active ? IsHovering() ? Color.green : Color.blue : Color.red);
 
         if (Physics.Raycast(_ray, out _hit, CastDepth, _pushableLayer)) {
             _hitThisFrame = true;
