@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class KeyboardInput : MonoBehaviour
 {
+    public int maxChars = 4;
+    public bool replaceBlankSpaceWithUnderscore;
+
     public GameObject _keyWrapper;
     public Text _uiText;
 
@@ -38,7 +41,7 @@ public class KeyboardInput : MonoBehaviour
     }
 
     private void AddString(string value) {
-        if (_text.Length < 4) {
+        if (_text.Length < maxChars) {
             _text += value;
             UpdateUiText();
         }
@@ -46,8 +49,10 @@ public class KeyboardInput : MonoBehaviour
 
     private void UpdateUiText() {
         var uiTextValue = _text;
-        while (uiTextValue.Length < 4) {
-            uiTextValue += "_";
+        if (replaceBlankSpaceWithUnderscore) {
+            while (uiTextValue.Length < maxChars) {
+                uiTextValue += "_";
+            }
         }
         _uiText.text = uiTextValue;
     }

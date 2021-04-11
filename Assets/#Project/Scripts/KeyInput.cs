@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(VrButton))]
-public class KeyInput : MonoBehaviour
+public class KeyInput : MonoBehaviour, ISettableKeyValue
 {
     public event Action<string> OnKeyPressed;
 
@@ -17,5 +17,9 @@ public class KeyInput : MonoBehaviour
 
     private void ButtonClicked() {
         OnKeyPressed?.Invoke(keyValue);
+    }
+
+    public void SetKeyValue(string value) {
+        keyValue = value;
     }
 }

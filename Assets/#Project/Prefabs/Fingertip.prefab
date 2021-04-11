@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 44480515462244863}
   - component: {fileID: 44480515462244862}
   - component: {fileID: 44480515462244861}
-  - component: {fileID: 44480515462244860}
   - component: {fileID: 44480515462244859}
   m_Layer: 0
   m_Name: Fingertip
@@ -110,22 +109,6 @@ Rigidbody:
   m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &44480515462244860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44480515462244858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a5d8e4da314499255b00bebccbec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableLayers:
-    serializedVersion: 2
-    m_Bits: 512
-  interactingListeners: []
 --- !u!114 &44480515462244859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,5 +125,6 @@ MonoBehaviour:
   _pushableLayer:
     serializedVersion: 2
     m_Bits: 512
-  _hoverHelper: {fileID: 44480515462244860}
-  _hoveringListener: {fileID: 0}
+  _rigidBody: {fileID: 44480515462244861}
+  _hoverZoneListener: {fileID: 0}
+  _actionZoneListener: {fileID: 0}
