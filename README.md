@@ -2,9 +2,10 @@
 
 # Hinge Button Prototype
 Quick prototype for hinged buttons comissioned by Road To VR. 
-[Demo .apk available here](https://github.com/helemaalbigt/HingeButtons/releases) with a numpad and keyboard demo.
 
 Our goal with this test was to make a hand tracking button designed around a 'flicking' affordance rather than a 'pushing' one, since the lack of haptics with hand tracking often results in users 'pulling back' too soon when trying to press pushable buttons.
+
+[Demo .apk available here](https://github.com/helemaalbigt/HingeButtons/releases) with a numpad and keyboard demo.
 
 This prototype was put together in a day and has plenty of room for improvement:
 * the interaction system doesn't destinguish the "closest" button to interact with. The current workaround is to shrink the button colliders to avoid the possibility of a finger pressing two buttons at once. 
